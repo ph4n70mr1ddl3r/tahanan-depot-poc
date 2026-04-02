@@ -1,7 +1,7 @@
 # 09 — ORACLE FUSION DATA MODEL & CONFIGURATION
 
 ## Oracle Fusion Setup Summary
-This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
+This section documents the Oracle Fusion Cloud production configuration for Tahanan Depot. All configurations described below are live and operational.
 
 ---
 

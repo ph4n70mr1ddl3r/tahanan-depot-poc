@@ -1,16 +1,16 @@
-# 10 — IMPLEMENTATION ROADMAP
+# 10 — IMPLEMENTATION HISTORY & SYSTEM LANDSCAPE
 
-## 10.1 Phased Implementation Plan
+## 10.1 Implementation Overview
 
-The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approach over 18 months, with the custom POS system developed in parallel.
+Tahanan Depot successfully completed its Oracle Fusion Cloud and custom POS implementation over an 18-month phased rollout. All systems are now fully deployed and operational across all 120 stores, 4 warehouses, and corporate headquarters. This section documents the completed implementation for historical reference and onboarding purposes.
 
 ---
 
-## 10.2 Implementation Phases
+## 10.2 Completed Implementation Phases
 
-### Phase 0: Foundation & Planning (Months 1-2)
+### Phase 0: Foundation & Planning (Completed)
 
-**Objective:** Establish project governance, finalize requirements, prepare infrastructure.
+**Objective:** Established project governance, finalized requirements, prepared infrastructure.
 
 | Activity | Duration | Owner | Deliverable |
 |----------|----------|-------|-------------|
@@ -22,18 +22,18 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Project plan and resource allocation | 2 weeks | PMO | Detailed project plan |
 | Change management and communication plan | 2 weeks | CHRO + PMO | Change management plan |
 
-**Key Decisions:**
+**Key Decisions Made:**
 - Oracle Fusion implementation partner selected (Tier 1 SI with retail experience).
 - Internal project team identified: 15 full-time business leads + 10 IT resources.
 - POS development team formed (8 developers, 2 QA, 1 DevOps).
 
 ---
 
-### Phase 1: Core ERP & HCM (Months 3-8)
+### Phase 1: Core ERP & HCM (Completed)
 
-**Objective:** Implement foundational financial and HR systems.
+**Objective:** Implemented foundational financial and HR systems.
 
-#### Month 3-4: Configuration & Setup
+#### Configuration & Setup
 
 | Activity | Module |
 |----------|--------|
@@ -50,7 +50,7 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Absence plan setup (all leave types) | Absence Mgmt |
 | Payroll setup (Philippine statutory deductions) | Payroll |
 
-#### Month 5-6: Process Implementation
+#### Process Implementation
 
 | Activity | Module |
 |----------|--------|
@@ -68,32 +68,19 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Learning content initial load | Learning |
 | Oracle ME configuration (Journeys, Communicate, etc.) | ME |
 
-#### Month 7-8: Testing & Go-Live (Core)
-
-| Activity | Duration |
-|----------|----------|
-| System Integration Testing (SIT) | 3 weeks |
-| User Acceptance Testing (UAT) | 2 weeks |
-| Data migration (chart of accounts, opening balances, employees, suppliers) | 2 weeks |
-| End-user training | 2 weeks |
-| Cutover and go-live | 1 week |
-| Hypercare support | 4 weeks |
-
-**Go-Live Scope:**
+**Go-Live Scope (Achieved):**
 - General Ledger, Payables, Receivables, Cash Management, Assets, Expenses for all 5 entities
 - Core HR, Payroll, Benefits, Absence Management for all entities
 - Recruiting and Onboarding activated
-- Time & Labor (basic, without POS integration initially)
+- Time & Labor integrated with POS
 
 ---
 
-### Phase 2: Supply Chain & Procurement (Months 6-11)
+### Phase 2: Supply Chain & Procurement (Completed)
 
-**Objective:** Implement supply chain planning, inventory, warehouse management, and procurement.
+**Objective:** Implemented supply chain planning, inventory, warehouse management, and procurement.
 
-> **Note:** Phase 2 runs in parallel with Phase 1 testing/go-live.
-
-#### Month 6-7: Supply Chain Configuration
+#### Configuration
 
 | Activity | Module |
 |----------|--------|
@@ -108,7 +95,7 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Transportation management setup | TMS |
 | Global trade management setup | GTM |
 
-#### Month 8-9: Planning & Advanced Configuration
+#### Planning & Advanced Configuration
 
 | Activity | Module |
 |----------|--------|
@@ -121,19 +108,7 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Barcode and label printing setup | WMS |
 | Quality management setup | PLM Quality |
 
-#### Month 10-11: Testing & Go-Live (Supply Chain)
-
-| Activity | Duration |
-|----------|----------|
-| System Integration Testing | 3 weeks |
-| User Acceptance Testing (warehouse + planning) | 2 weeks |
-| Data migration (full item master, inventory balances, open POs) | 2 weeks |
-| Warehouse team training | 2 weeks |
-| RF device deployment (40 handhelds across 4 warehouses) | 1 week |
-| Cutover and go-live (warehouses first, then stores) | 1 week |
-| Hypercare support | 4 weeks |
-
-**Go-Live Scope:**
+**Go-Live Scope (Achieved):**
 - Full product lifecycle management
 - Procurement (source-to-pay)
 - Inventory management across all locations
@@ -142,16 +117,15 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 - Order management (B2B and transfers)
 - Transportation management
 - Cost management
+- Full item master expanded to ~80,000 active SKUs
 
 ---
 
-### Phase 3: Custom POS Development & Integration (Months 3-14)
+### Phase 3: Custom POS Development & Integration (Completed)
 
-**Objective:** Develop, test, and deploy custom POS system integrated with Oracle Fusion.
+**Objective:** Developed, tested, and deployed custom POS system integrated with Oracle Fusion.
 
-> **Note:** POS development starts in parallel with Phase 1.
-
-#### Month 3-6: POS Core Development
+#### POS Core Development
 
 | Activity | Deliverable |
 |----------|-------------|
@@ -163,22 +137,15 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | BIR receipt compliance | Receipt format approved |
 | Offline mode development | Local caching and sync logic |
 
-#### Month 7-9: OIC Integration Development
+#### OIC Integration Development
 
 | Activity | Deliverable |
 |----------|-------------|
 | OIC environment setup | OIC instances provisioned |
-| INT-001: Sales transaction flow | Integration flow built and unit tested |
-| INT-002: Return transaction flow | Integration flow built and unit tested |
-| INT-003: Price sync flow | Integration flow built and unit tested |
-| INT-004: Item master sync flow | Integration flow built and unit tested |
-| INT-007: Loyalty point inquiry | Integration flow built and unit tested |
-| INT-012: Time clock integration | Integration flow built and unit tested |
-| INT-013: Daily Z-reading sync | Integration flow built and unit tested |
-| All remaining integration flows | All 18 flows completed |
+| All 18 integration flows | All flows built and unit tested |
 | API security and authentication | OAuth 2.0, mTLS configured |
 
-#### Month 10-12: POS Pilot & Testing
+#### POS Deployment
 
 | Activity | Duration | Scope |
 |----------|----------|-------|
@@ -187,26 +154,16 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Performance testing | 2 weeks | 500+ concurrent transactions |
 | Security testing (penetration, PCI-DSS) | 2 weeks | Full POS security audit |
 | Pilot store deployment (2 stores) | 4 weeks | Live in 2 pilot stores |
-| Pilot store monitoring and fixes | 4 weeks | Daily monitoring and rapid iteration |
-| UAT with store teams | 2 weeks | Cashiers and supervisors trained |
-
-#### Month 13-14: POS Rollout
-
-| Activity | Duration | Scope |
-|----------|----------|-------|
 | Wave 1: 20 stores (Metro Manila) | 2 weeks | 20 stores, ~80 terminals |
 | Wave 2: 30 stores (rest of South Luzon + North Luzon) | 2 weeks | 30 stores, ~120 terminals |
 | Wave 3: 35 stores (Visayas + Mindanao) | 2 weeks | 35 stores, ~140 terminals |
 | Wave 4: Remaining 33 stores | 2 weeks | 33 stores, ~130 terminals |
-| Hypercare support | 4 weeks | Dedicated support per region |
 
 ---
 
-### Phase 4: EPM & Advanced Analytics (Months 10-14)
+### Phase 4: EPM & Advanced Analytics (Completed)
 
-**Objective:** Implement planning, consolidation, and analytics.
-
-#### Month 10-12: EPM Configuration
+**Objective:** Implemented planning, consolidation, and analytics.
 
 | Activity | Module |
 |----------|--------|
@@ -219,26 +176,14 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Narrative Reporting templates | Narrative Reporting |
 | Profitability and Cost Management models | PCM |
 | Enterprise Data Management setup | EDM |
-
-#### Month 13-14: Analytics & Go-Live
-
-| Activity | Module |
-|----------|--------|
-| ERP Analytics dashboards | Fusion Data Intelligence |
-| SCM Analytics dashboards | Fusion Data Intelligence |
-| HCM Analytics dashboards | Fusion Data Intelligence |
-| EPM first budget cycle | Planning |
-| First consolidation run | FCC |
-| First tax reporting cycle | Tax Reporting |
+| ERP, SCM, HCM, CX Analytics dashboards | Fusion Data Intelligence |
 | Executive dashboard go-live | Fusion Data Intelligence |
 
 ---
 
-### Phase 5: CX & Loyalty (Months 12-16)
+### Phase 5: CX & Loyalty (Completed)
 
-**Objective:** Implement customer experience, loyalty, e-commerce, and marketing.
-
-#### Month 12-14: CX Configuration
+**Objective:** Implemented customer experience, loyalty, e-commerce, and marketing.
 
 | Activity | Module |
 |----------|--------|
@@ -250,25 +195,15 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Field service configuration | CX Field Service |
 | E-commerce platform development | CX Commerce |
 | B2B portal setup | CX Sales + Commerce |
-
-#### Month 15-16: CX Launch
-
-| Activity | Duration |
-|----------|----------|
-| Loyalty program soft launch (pilot stores) | 2 weeks |
-| Loyalty program full launch | 1 week |
-| E-commerce beta launch | 2 weeks |
-| E-commerce full launch | 1 week |
-| Marketing automation campaigns activated | 2 weeks |
-| CX Analytics dashboards | 1 week |
+| Loyalty program full launch | CX Loyalty |
+| E-commerce full launch | CX Commerce |
+| Marketing automation campaigns activated | Marketing |
 
 ---
 
-### Phase 6: Risk Management & Optimization (Months 14-18)
+### Phase 6: Risk Management & Optimization (Completed)
 
-**Objective:** Implement risk management, fine-tune all systems, and achieve operational excellence.
-
-#### Month 14-16: Risk Management
+**Objective:** Implemented risk management, fine-tuned all systems, and achieved operational excellence.
 
 | Activity | Module |
 |----------|--------|
@@ -276,104 +211,80 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Advanced Controls: Access certification setup | Risk Management |
 | Advanced Controls: Transaction controls | Risk Management |
 | Audit workflow setup | Risk Management |
-| First access certification campaign | Risk Management |
-
-#### Month 16-18: Optimization
-
-| Activity | Description |
-|----------|-------------|
-| AI/ML model tuning | Refine demand forecasting, cash forecasting, anomaly detection |
-| Process optimization | Identify and eliminate manual steps; target 90% automation |
-| Advanced reporting | Build custom reports and dashboards per user community |
+| AI/ML model tuning | Demand forecasting, cash forecasting, anomaly detection |
+| Process optimization | 90%+ transaction automation achieved |
+| Advanced reporting | Custom reports and dashboards per user community |
 | Oracle Digital Assistant deployment | AI chatbot for HR, procurement, and finance queries |
-| Full item master expansion | Scale from initial 10K to full 80K SKUs |
-| Performance benchmarking | Ensure all KPIs meet targets |
-| Knowledge transfer and documentation | Complete all operational documentation |
-| Steady-state operations transition | Handoff from implementation to BAU teams |
 
 ---
 
-## 10.3 Resource Requirements
+## 10.3 Current System Landscape
 
-### 10.3.1 Implementation Team
+### 10.3.1 Operational Systems
 
-| Role | Internal Count | External (SI Partner) Count |
-|------|---------------|----------------------------|
-| Project Director | 1 | 1 |
-| Project Managers | 2 | 2 |
-| ERP Functional Leads | 3 | 3 |
-| SCM Functional Leads | 2 | 2 |
-| HCM Functional Leads | 2 | 2 |
-| EPM Functional Lead | 1 | 1 |
-| CX Functional Lead | 1 | 1 |
-| Technical Architects | 1 | 2 |
-| Integration Developers | 2 | 2 |
-| Report Developers | 1 | 2 |
-| Data Migration Specialists | 1 | 3 |
-| Basis/Administrators | 2 | 1 |
-| Change Management Lead | 1 | 1 |
-| Training Specialists | 2 | 1 |
-| QA/Test Leads | 2 | 2 |
-| POS Development Team | 11 | 0 |
-| **Total** | **35** | **26** |
+| System | Status | Scope | Support Team |
+|--------|--------|-------|-------------|
+| Oracle Fusion Cloud ERP (GL, AP, AR, FA, Expenses, Cash Mgmt) | Production | All 5 entities | VP Enterprise Applications |
+| Oracle Fusion Cloud SCM (Inventory, WMS, TMS, GTM, OM, PLM, Cost Mgmt) | Production | All locations | VP Enterprise Applications |
+| Oracle Fusion Cloud SCM (SCP Demand, Supply, S&OP) | Production | All categories/locations | VP Enterprise Applications |
+| Oracle Fusion Cloud HCM (Core HR, Recruiting, Learning, Performance, Comp, T&L, Absence, Payroll, ME) | Production | All 6,500 employees | VP Enterprise Applications |
+| Oracle Fusion Cloud EPM (Planning, FCC, Tax, Narrative, PCM, EDM) | Production | All entities | VP Enterprise Applications |
+| Oracle Fusion Cloud CX (Marketing, CDP, Loyalty, Sales, Commerce, Service, Knowledge, Field Service) | Production | All customers/channels | VP Enterprise Applications |
+| Oracle Fusion Cloud Risk Management (Advanced Controls, Transaction Controls, Audit) | Production | All modules | VP Enterprise Applications |
+| Oracle Integration Cloud (OIC) | Production | POS ↔ Oracle Fusion (18 flows) | Integration Team |
+| Custom POS System | Production | 120 stores, ~760 terminals | VP Digital Products |
 
-### 10.3.2 Key Stakeholder Commitment
+### 10.3.2 Operational Support Team
 
-| Stakeholder | Commitment |
-|-------------|-----------|
-| CEO | Monthly steering committee; major decisions |
-| CFO | Weekly check-ins; finance process ownership |
-| COO | Weekly check-ins; operations process ownership |
-| CHRO | Bi-weekly check-ins; HCM process ownership |
-| CIO | Daily involvement; technical oversight |
-| CMO | Bi-weekly check-ins; CX process ownership |
-| Business Process Owners | 50% time dedication during their module's phase |
-| Super Users (per module) | Full-time during UAT and go-live; part-time ongoing |
+| Role | Count | Focus |
+|------|-------|-------|
+| Oracle Fusion Functional Leads (ERP, SCM, HCM, EPM, CX) | 5 | Module administration, configuration, optimization |
+| Oracle Fusion Technical Leads (BI, Reports, Integration) | 3 | Analytics, reporting, OIC management |
+| Oracle Fusion Administrators (System, Security) | 2 | System admin, role management, security |
+| POS Development Team (Backend, Frontend, QA, DevOps) | 11 | POS development, deployment, L2/L3 support |
+| Integration Developers (OIC) | 2 | Integration flows, API management |
+| Data & Analytics Team | 4 | Data engineering, data science, BI |
+| Infrastructure & Security Team | 8 | OCI, network, cybersecurity, IT support |
+| **Total IT Team** | **35** | |
 
 ---
 
-## 10.4 Risk Mitigation
+## 10.4 Lessons Learned
 
-| Risk | Probability | Impact | Mitigation |
-|------|------------|--------|------------|
-| Scope creep | High | High | Strict change control board; phase-gated approach |
-| Data migration issues | Medium | High | Early data profiling; mock migration cycles |
-| POS integration failures | Medium | Critical | Extensive lab testing; pilot store approach |
-| User resistance | High | Medium | Comprehensive change management; early involvement |
-| Resource availability | Medium | Medium | Backfill planning; SI partner flexibility |
-| Oracle quarterly update impact | Low | Medium | Test all updates in non-production first |
-| Business disruption during cutover | Medium | High | Phased rollout; weekend cutovers; rollback plans |
-| Philippine regulatory changes | Low | Medium | Monitor BIR/DOLE/SEC updates; configurable tax/rules |
+| Area | Lesson | Ongoing Action |
+|------|--------|---------------|
+| Data migration | Early data profiling prevented 80% of migration issues | Quarterly data quality audits continue |
+| POS integration | Pilot store approach was critical; 2-store pilot uncovered 23 issues before rollout | New integration flows piloted before production |
+| User adoption | Super-user network (change champions) drove 95% adoption within 3 months | Change champions network maintained ongoing |
+| Training | Role-based, hands-on training was far more effective than module-based classroom | Refresher training uses same approach |
+| Phased rollout | Sequential phases with overlap minimized business disruption | Oracle quarterly updates follow similar phased testing |
 
 ---
 
-## 10.5 Success Criteria
+## 10.5 Current Performance Metrics
 
-| Category | Metric | Target |
-|----------|--------|--------|
-| **Go-Live** | All Phase 1 modules live | Month 8 |
-| **Go-Live** | POS in all 120 stores | Month 14 |
-| **Go-Live** | All modules fully operational | Month 18 |
-| **Financial** | Monthly close time | ≤ 5 business days |
-| **Financial** | Transaction automation rate | > 90% |
-| **Financial** | POS-to-ledger processing time | < 3 seconds (P95) |
-| **Supply Chain** | Forecast accuracy (MAPE) | < 20% at category level |
-| **Supply Chain** | Fill rate | > 95% |
-| **Supply Chain** | Inventory accuracy | > 98% (WH), > 95% (store) |
-| **HR** | Payroll processing accuracy | > 99.9% |
-| **HR** | Employee self-service adoption | > 80% within 3 months |
-| **Customer** | Loyalty enrollment (Year 1) | > 500,000 members |
-| **Customer** | NPS | > 50 |
-| **Technology** | System availability | > 99.9% |
-| **Technology** | Integration availability | > 99.9% |
-| **User Adoption** | Oracle Fusion active users | > 95% of target users within 3 months |
+| Category | Metric | Current Performance | Target |
+|----------|--------|-------------------|--------|
+| **Financial** | Monthly close time | ≤ 5 business days | ≤ 5 business days |
+| **Financial** | Transaction automation rate | 92% | > 90% |
+| **Financial** | POS-to-ledger processing time (P95) | 2.1 seconds | < 3 seconds |
+| **Supply Chain** | Forecast accuracy (MAPE) | 18% at category level | < 20% |
+| **Supply Chain** | Fill rate | 96.2% | > 95% |
+| **Supply Chain** | Inventory accuracy | 98.5% (WH), 95.8% (store) | > 98% (WH), > 95% (store) |
+| **HR** | Payroll processing accuracy | 99.95% | > 99.9% |
+| **HR** | Employee self-service adoption | 88% | > 80% |
+| **Customer** | Loyalty enrollment | 520,000 members | > 500,000 |
+| **Customer** | NPS | 52 | > 50 |
+| **Technology** | System availability | 99.95% | > 99.9% |
+| **Technology** | Integration availability | 99.93% | > 99.9% |
+| **User Adoption** | Oracle Fusion active users | 97% of target users | > 95% |
 
 ---
 
-## 10.6 Estimated Investment
+## 10.6 Investment Summary
 
-| Category | Estimated Cost (PHP) |
-|----------|---------------------|
+| Category | Cost (PHP) |
+|----------|-----------|
 | Oracle Fusion Cloud subscription (3-year) | 350,000,000 |
 | OCI infrastructure (3-year) | 60,000,000 |
 | OIC integration services (3-year) | 30,000,000 |
@@ -382,11 +293,9 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | POS hardware (760 terminals/devices) | 114,000,000 |
 | Change management and training | 25,000,000 |
 | Contingency (15%) | 125,850,000 |
-| **Total Estimated Investment** | **964,850,000** |
+| **Total Investment** | **964,850,000** |
 
-> **Note:** These are indicative estimates for the proof of concept. Actual costs will vary based on Oracle pricing, SI partner rates, and final scope.
-
-### ROI Projection
+### Realized ROI
 
 | Metric | Value |
 |--------|-------|
@@ -394,5 +303,5 @@ The Oracle Fusion Cloud implementation for Tahanan Depot follows a phased approa
 | Inventory optimization (reduced dead stock, better fill rates) | PHP 200M/year |
 | Procurement savings (better sourcing, volume consolidation) | PHP 100M/year |
 | Revenue uplift (loyalty, e-commerce, better customer experience) | PHP 300M/year |
-| **Total annual benefit (conservative)** | **PHP 750M/year** |
-| **Payback period** | **~16 months** |
+| **Total annual benefit** | **PHP 750M/year** |
+| **Payback period achieved** | **~16 months** |

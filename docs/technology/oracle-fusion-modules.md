@@ -2,7 +2,9 @@
 
 ## Module-to-Business Function Matrix
 
-This section maps every Oracle Fusion Cloud module to specific Tahanan Depot business functions, showing how each feature is utilized.---
+This section maps every Oracle Fusion Cloud module to specific Tahanan Depot business functions, showing how each feature is utilized across the production environment.
+
+---
 
 ## 3.2 Financial Management (Oracle Cloud ERP — Financials)
 

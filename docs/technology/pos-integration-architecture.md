@@ -1,8 +1,8 @@
 # 08 — CUSTOM POS INTEGRATION ARCHITECTURE
 
-## 8.1 Architecture Overview
+## 8.1 Architecture Overview (Production)
 
-The custom POS system is developed in-house by Tahanan Digital, Inc. and integrates with Oracle Fusion Cloud via Oracle Integration Cloud (OIC). This section documents the complete integration architecture, data flows, API contracts, and error handling.
+The custom POS system, developed in-house by Tahanan Digital, Inc., is deployed across all 120 stores and integrates with Oracle Fusion Cloud via Oracle Integration Cloud (OIC). This section documents the production integration architecture, data flows, API contracts, and error handling.
 
 ### 8.1.1 High-Level Architecture Diagram
 

@@ -70,7 +70,7 @@ DATA CUSTODIANS (IT)
 | Tax Codes | Oracle Tax | Payables, AR, POS (mapped) | ~15 active tax codes | VP Tax |
 | Payment Terms | Oracle Payables/AR | Purchasing, AR | ~8 standard terms | VP Finance |
 | Loyalty Program | Oracle CX Loyalty | POS, Commerce, Marketing | Rules, tiers, point values | VP Loyalty & CRM |
-| POS Mapping Tables | POS (local) + Oracle (source) | POS, OIC | Item-price-customer maps | POS Dev Manager |
+| POS Mapping Tables | POS (local) + Oracle (source) | POS, OIC | Item-price-customer maps | POS Dev Manager (ongoing maintenance) |
 
 ---
 

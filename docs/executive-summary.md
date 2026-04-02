@@ -45,19 +45,19 @@ Following the Home Depot / Wilcon model, Tahanan Depot sells:
 | Safety & Security | Locks, CCTV systems, fire extinguishers, PPE |
 | Storage & Organization | Shelving, cabinets, bins, tool storage |
 
-## 1.4 Strategic Technology Decision
+## 1.4 Strategic Technology Platform
 
-Tahanan Depot has made a strategic decision to:
+Tahanan Depot operates on a hybrid technology platform:
 
-1. **Adopt Oracle Fusion Cloud Suite** as the enterprise backbone for ERP, SCM, HCM, EPM, CX, and analytics — maximizing every available feature and module that adds value to the retail operation.
+1. **Oracle Fusion Cloud Suite** serves as the enterprise backbone for ERP, SCM, HCM, EPM, CX, and analytics — with every available feature and module that adds value to the retail operation fully deployed and operational.
 
-2. **Develop a custom POS system in-house** tailored to Philippine retail requirements (BIR compliance, local payment methods, Filipino UX), which will be integrated with Oracle Fusion via Oracle Integration Cloud (OIC).
+2. **A custom POS system developed in-house** by Tahanan Digital, Inc. handles all store-level transactions, tailored to Philippine retail requirements (BIR compliance, local payment methods, Filipino UX), and is fully integrated with Oracle Fusion via Oracle Integration Cloud (OIC).
 
-This hybrid approach provides the enterprise-grade backbone of Oracle Fusion with the flexibility and localization of a custom POS solution.
+This hybrid architecture combines the enterprise-grade backbone of Oracle Fusion with the flexibility and localization of a custom POS solution, both in production and operating across all 120 stores.
 
 ## 1.5 Oracle Fusion Cloud Suite — Modules in Scope
 
-The following Oracle Fusion Cloud modules will be fully deployed:
+The following Oracle Fusion Cloud modules are fully deployed and operational:
 
 ### Core ERP
 | Module | Purpose |
