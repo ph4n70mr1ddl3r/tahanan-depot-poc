@@ -10,6 +10,7 @@ This section documents the Oracle Fusion Cloud production configuration for Taha
 ### Enterprise
 
 | Setting | Value |
+|---------|-------|
 | Enterprise Name | Tahanan Holdings, Inc. |
 | Enterprise ID | TAHA-HLDG |
 | Calendar | January - December (52-53 week fiscal year option) |
@@ -17,7 +18,7 @@ This section documents the Oracle Fusion Cloud production configuration for Taha
 | Reporting Currency | PHP (USD for IFRS consolidation if needed) |
 | Localized | Yes — Philippines |
 
-### Primary Ledgers
+### 9.1.1 Primary Ledgers
 
 | Ledger Name | Legal Entity | Currency | Chart of Accounts | Calendar | Accounting Method |
 |-------------|-------------|----------|-------------------|----------|-------------------|
@@ -27,7 +28,9 @@ This section documents the Oracle Fusion Cloud production configuration for Taha
 | TP-Primary | Tahanan Property | PHP | TD-CoA | Jan-Dec | Philippine Standard (PFRS) |
 | TD-Primary | Tahanan Digital | PHP | TD-CoA | Jan-Dec | Philippine Standard (PFRS) |
 
-### 9.1.3 Reporting Currency Ledger| Ledger Name | Source Ledger | Currency | Purpose |
+### 9.1.2 Reporting Currency Ledger
+
+| Ledger Name | Source Ledger | Currency | Purpose |
 |-------------|-------------|----------|---------|
 | Consolidated-USD | All primary ledgers | USD | Foreign investor reporting |
 

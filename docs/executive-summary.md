@@ -22,7 +22,7 @@ To be the Philippines' most trusted and efficient home improvement retailer, set
 | SKU Count | ~80,000 active SKUs |
 | Suppliers | ~2,500 active |
 | Employees | ~6,500 |
-| Projected Annual Revenue | PHP 45 billion |
+| Annual Revenue | PHP 45 billion |
 | Store Average Size | 5,000-10,000 sqm |
 | Warehouse Average Size | 20,000-30,000 sqm |
 

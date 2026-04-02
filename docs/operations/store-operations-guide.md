@@ -37,7 +37,7 @@ This document provides the comprehensive operational framework for Tahanan Depot
 | Sales Associates | 15-20 | 15 | 10-12 | 1,800 |
 | Cashiers | 6-8 | 6 | 4-5 | 720 |
 | Stock Associates | 4-5 | 4 | 3 | 480 |
-| **Total per store** | **34-44** | **34** | **23-24** | |
+| **Total per store** | **34-44** | **34** | **23-27** | |
 
 ---
 

@@ -65,7 +65,7 @@ This section documents all end-to-end business processes, their Oracle Fusion to
 
 **Key Controls:**
 - 3-way match enforced for all merchandise invoices > PHP 5,000.
-- PO approval thresholds: Manager < PHP 50K, Director < PHP 500K, VP < PHP 5M, CFO > PHP 5M.
+- PO approval thresholds per POL-FIN-001: Auto-approve < PHP 10K, Supervisor/Store Manager < PHP 50K, Manager/District Manager < PHP 200K, Regional Director/VP < PHP 500K, SVP/COO/CFO < PHP 5M, CEO+CFO > PHP 5M.
 - EWT rates auto-applied per BIR withholding tax table (1%, 2%, 5%, 20% per goods/service type).
 - Supplier payment holds automatically applied for overdue deliveries or quality issues.
 

@@ -160,7 +160,7 @@ BOARD OF DIRECTORS
 | **NPC — National Privacy Commission** | | | | | | |
 | Data Privacy Act (RA 10173) | All entities | DPO appointment; privacy impact assessment; breach notification | DPO / CLO | Ongoing | All modules (data access controls) | DPIA reports, consent records, breach logs |
 | **BSP — Bangko Sentral ng Pilipinas** | | | | | | |
-| Anti-Money Laundering (RA 9210) | All entities | Covered transaction reporting; CDD/EDD | VP Treasury / CLO | As needed | Cash Management, Payables | Transaction records, CDD documentation |
+| Anti-Money Laundering (RA 9160) | All entities | Covered transaction reporting; CDD/EDD | VP Treasury / CLO | As needed | Cash Management, Payables | Transaction records, CDD documentation |
 | **Local Government Units** | | | | | | |
 | Business permits | All locations | Annual business permit renewal | VP Facilities / CLO | Annual | Narrative Reporting (calendar) | Business permits |
 | Fire safety certificate | All locations | Annual fire safety inspection | VP Facilities | Annual | Manual | Fire safety certificates |

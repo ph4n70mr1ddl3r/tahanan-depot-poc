@@ -104,7 +104,7 @@ PRESIDENT — Tahanan Retail, Inc.
 │       └── District Managers (3 per region = 12 total)
 │           │
 │           └── Store Managers (10 per district = 120 total)
-│               ├── Assistant Store Managers (2 per store = 240)
+│               ├── Assistant Store Managers (~1.7 avg per store = ~200; varies by format, see Doc 14)
 │               ├── Department Supervisors (6 per store = 720)
 │               ├── Sales Associates (15 per store = 1,800)
 │               ├── Cashiers (6 per store = 720)
@@ -310,7 +310,7 @@ ITEM MASTER ORGANIZATION (Tahanan Supply Chain Corp)
 │
 ├── WH-NL (North Luzon Distribution Center)
 │   ├── Subinventory: Finished Goods
-│   ├── Subinventory: Raw Materials
+│   ├── Subinventory: Reserve Stock
 │   ├── Subinventory: Staging
 │   ├── Subinventory: Receiving
 │   └── Subinventory: Returns
@@ -374,13 +374,13 @@ ENTERPRISE: Tahanan Holdings, Inc.
 | Entity | Management | Professional | Operations | Total |
 |--------|-----------|-------------|------------|-------|
 | Tahanan Holdings | 15 | 25 | 10 | 50 |
-| Tahanan Retail | 160 | 120 | 3,780 | 4,060 |
+| Tahanan Retail | 160 | 120 | 3,740 | 4,020 |
 | Tahanan Supply Chain | 25 | 50 | 350 | 425 |
 | Tahanan Property | 10 | 30 | 200 | 240 |
 | Tahanan Digital | 15 | 110 | 50 | 175 |
 | Cross-Entity Shared | — | 15 | — | 15 |
-| **Total** | **225** | **350** | **4,390** | **4,965** |
-| Contractual / Agency Staff | — | — | — | **~1,535** |
+| **Total** | **225** | **350** | **4,350** | **4,925** |
+| Contractual / Agency Staff | — | — | — | **~1,575** |
 | **Grand Total** | | | | **~6,500** |
 
-> **Note:** The 1,535 contractual/agency workers are primarily for warehouse operations, store promotions, and project-based construction. They are tracked in Oracle HCM as contingent workers.
+> **Note:** The ~1,575 contractual/agency workers are primarily for warehouse operations, store promotions, and project-based construction. They are tracked in Oracle HCM as contingent workers.
