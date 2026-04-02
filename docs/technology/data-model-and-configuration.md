@@ -1,17 +1,15 @@
 # 09 — ORACLE FUSION DATA MODEL & CONFIGURATION
 
-## 9.1 Oracle Fusion Setup Summary
-
+## Oracle Fusion Setup Summary
 This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
 
 ---
 
-## 9.2 Enterprise Structure Configuration
+## 9.1 Enterprise Structure Configuration
 
-### 9.2.1 Enterprise
+### Enterprise
 
 | Setting | Value |
-|---------|-------|
 | Enterprise Name | Tahanan Holdings, Inc. |
 | Enterprise ID | TAHA-HLDG |
 | Calendar | January - December (52-53 week fiscal year option) |
@@ -19,7 +17,7 @@ This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
 | Reporting Currency | PHP (USD for IFRS consolidation if needed) |
 | Localized | Yes — Philippines |
 
-### 9.2.2 Primary Ledgers
+### Primary Ledgers
 
 | Ledger Name | Legal Entity | Currency | Chart of Accounts | Calendar | Accounting Method |
 |-------------|-------------|----------|-------------------|----------|-------------------|
@@ -35,7 +33,7 @@ This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
 |-------------|-------------|----------|---------|
 | Consolidated-USD | All primary ledgers | USD | Foreign investor reporting |
 
-### 9.2.4 Business Units (Complete List)
+### Business Units (Complete List)
 
 | Business Unit | Legal Entity | BU Type |
 |---------------|-------------|---------|
@@ -60,9 +58,9 @@ This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
 
 ---
 
-## 9.3 Chart of Accounts — Key Account Ranges
+## 9.2 Chart of Accounts — Key Account Ranges
 
-### 9.3.1 Natural Account Segment (6-digit)
+### Natural Account Segment (6-digit)
 
 | Range | Account Type | Examples |
 |-------|-------------|----------|
@@ -89,9 +87,9 @@ This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
 
 ---
 
-## 9.4 Tax Configuration
+## 9.3 Tax Configuration
 
-### 9.4.1 Tax Rates
+### Tax Rates
 
 | Tax Type | Rate | Oracle Tax Code | BIR Form |
 |----------|------|----------------|----------|
@@ -106,7 +104,7 @@ This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
 | Corporate Income Tax (RCIT) | 30% (or 20% if taxable income ≤ PHP 5M, total assets ≤ PHP 100M) | PH-CIT | 1702 |
 | MCIT | 2% of gross income | PH-MCIT | 1702 |
 
-### 9.4.2 Tax Reporting Calendar
+### Tax Reporting Calendar
 
 | Return | Deadline | Oracle Module |
 |--------|----------|---------------|
@@ -121,9 +119,9 @@ This section documents the Oracle Fusion Cloud configuration for Tahanan Depot.
 
 ---
 
-## 9.5 Product Hierarchy Configuration
+## 9.4 Product Hierarchy Configuration
 
-### 9.5.1 Item Catalog Structure
+### Item Catalog Structure
 
 ```
 Level 1: Department (12)
@@ -147,7 +145,7 @@ Level 1: Department (12)
 | DEPT-11 | Safety & Security | Locks, CCTV, Fire Extinguishers, PPE |
 | DEPT-12 | Storage & Organization | Shelving, Cabinets, Bins, Tool Storage |
 
-### 9.5.2 Item Template Attributes
+### Item Template Attributes
 
 | Attribute | Required | Example |
 |-----------|----------|---------|
@@ -177,9 +175,9 @@ Level 1: Department (12)
 
 ---
 
-## 9.6 Supplier Configuration
+## 9.5 Supplier Configuration
 
-### 9.6.1 Supplier Classification
+### Supplier Classification
 
 | Classification | Definition | Typical Count |
 |----------------|------------|---------------|
@@ -189,7 +187,7 @@ Level 1: Department (12)
 | Service Provider | Non-merchandise suppliers | ~500 |
 | One-Time | Infrequent / project-based | ~300 |
 
-### 9.6.2 Supplier Payment Terms
+### Supplier Payment Terms
 
 | Term Code | Description | Discount |
 |-----------|-------------|----------|
@@ -204,9 +202,9 @@ Level 1: Department (12)
 
 ---
 
-## 9.7 Customer Configuration
+## 9.6 Customer Configuration
 
-### 9.7.1 Customer Classification
+### Customer Classification
 
 | Classification | Definition | Payment Terms |
 |----------------|------------|---------------|
@@ -218,7 +216,7 @@ Level 1: Department (12)
 | B2B Institutional | Schools, hospitals, hotels | Credit per agreement |
 | E-Commerce | Online customers | Pre-paid or COD |
 
-### 9.7.2 B2B Credit Terms (in Oracle Receivables)
+### B2B Credit Terms (in Oracle Receivables)
 
 | Term | Description |
 |------|-------------|
@@ -228,7 +226,7 @@ Level 1: Department (12)
 
 ---
 
-## 9.8 Workflow Configuration Summary
+## 9.7 Workflow Configuration Summary
 
 ### 9.8.1 Approval Workflows
 
@@ -250,9 +248,9 @@ Level 1: Department (12)
 
 ---
 
-## 9.9 Reporting and Analytics Configuration
+## 9.8 Reporting and Analytics Configuration
 
-### 9.9.1 Key Performance Indicators (KPIs)
+### Key Performance Indicators (KPIs)
 
 #### Financial KPIs
 

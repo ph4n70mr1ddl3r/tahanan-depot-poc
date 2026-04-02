@@ -578,7 +578,7 @@ Leads all marketing functions including brand, digital marketing, loyalty progra
 
 ---
 
-## 7.8 Role-to-Oracle Fusion Security Matrix (Summary)
+## Role-to-Oracle Fusion Security Matrix
 
 | Role | ERP (GL/AP/AR/FA) | SCM (Inv/OM/WMS) | Procurement | HCM | EPM | CX | Risk Mgmt | OIC |
 |------|-------------------|-------------------|-------------|-----|-----|-----|-----------|-----|

@@ -41,7 +41,7 @@ CHANGE CHAMPIONS NETWORK
 ### 15.1.3 Change Impact Assessment
 
 | Change Area | Impact Level | Affected Population | Key Changes |
-|-------------|-------------|--------------------|-------------|5|
+|-------------|-------------|--------------------|-------------|
 | Financial processes | High | Finance team (~100) | New GL structure, automated AP/AR, new close process, Oracle-based reporting |
 | Supply chain operations | High | SCM team (~200) + Store receiving (~480) | New WMS, demand planning, inventory management, receiving via POS-Oracle integration |
 | POS system | Critical | All store staff (~4,060) | Entirely new POS system; new checkout procedures; offline mode; new payment methods |

@@ -2,7 +2,7 @@
 
 ## 14.1 Store Operations Overview
 
-This document provides the comprehensive operational framework for Tahanan Depot retail stores beyond the transactional SOPs covered in Document 06. It covers store standards, merchandising, customer service, workforce management, and performance management.
+This document provides the comprehensive operational framework for Tahanan Depot retail stores beyond the transactional SOPs covered in the Standard Operating Procedures. It covers store standards, merchandising, customer service, workforce management, and performance management.
 
 ---
 

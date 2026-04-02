@@ -1,7 +1,5 @@
 # 06 — STANDARD OPERATING PROCEDURES
 
-# 06 — Standard Operating Procedures
-
 ## 6.1 SOP Index
 
 | SOP ID | Title | Domain | Process Owner |
