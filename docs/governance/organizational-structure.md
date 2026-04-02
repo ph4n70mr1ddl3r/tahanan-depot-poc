@@ -61,7 +61,8 @@ BOARD OF DIRECTORS
     │   ├── VP Store Operations
     │   ├── VP Merchandising
     │   ├── VP Supply Chain
-    │   ├── VP Store Development
+    │       ├── VP Store Development
+    │   ├── VP Loss Prevention & Security
     │   └── VP Customer Service
     │
     ├── CHRO (Chief Human Resources Officer)
@@ -73,7 +74,7 @@ BOARD OF DIRECTORS
     │
     ├── CIO (Chief Information Officer)
     │   ├── VP Enterprise Applications (Oracle Fusion)
-    │   ├── VP Digital Products (POS, E-Commerce)
+    │       ├── VP Product Development (POS, E-Commerce)
     │   ├── VP Infrastructure & Security
     │   └── VP Data & Analytics
     │
@@ -108,6 +109,8 @@ PRESIDENT — Tahanan Retail, Inc.
 │               ├── Sales Associates (15 per store = 1,800)
 │               ├── Cashiers (6 per store = 720)
 │               └── Stock Associates (4 per store = 480)
+│
+│               *(Note: Per-store counts shown above are averages. Actual counts vary by store format; see Doc 14 — Store Operations Guide for format-specific staffing.)*
 │
 ├── VP Merchandising Operations
 │   ├── Category Managers (12 categories)

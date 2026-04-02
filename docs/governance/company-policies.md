@@ -1,5 +1,44 @@
 # 05 — COMPANY POLICIES
 
+## 5.1 Document Overview
+
+This document consolidates all company policies governing financial management, supply chain operations, retail operations, human resources, information technology, and customer experience across all Tahanan Depot entities. Each policy includes an effective date, scope, responsible parties, and Oracle Fusion module references.
+
+| Policy Code | Title | Domain |
+|----------|-------|--------|
+| POL-FIN-001 | Financial Authority and Approval Limits | Finance |
+| POL-FIN-002 | Expense Reimbursement Policy | Finance |
+| POL-FIN-003 | Cash Handling and Store Deposits | Finance |
+| POL-FIN-004 | Credit and Collections Policy (B2B) | Finance |
+| POL-FIN-005 | Revenue Recognition Policy | Finance |
+| POL-FIN-006 | Intercompany Transaction Pricing | Finance |
+| POL-FIN-007 | Capital Expenditure Approval | Finance |
+| POL-SCM-001 | Procurement and Sourcing Policy | Supply Chain |
+| POL-SCM-002 | Supplier Management Policy | Supply Chain |
+| POL-SCM-003 | Inventory Management Policy | Supply Chain |
+| POL-SCM-004 | Warehouse Safety Policy | Supply Chain |
+| POL-SCM-005 | Import and Customs Compliance | Supply Chain |
+| POL-RET-001 | Customer Return and Refund Policy | Retail |
+| POL-RET-002 | Store Pricing and Markdown Policy | Retail |
+| POL-RET-003 | Store Inventory Accuracy Policy | Retail |
+| POL-RET-004 | Gift Card Policy | Retail |
+| POL-HR-001 | Recruitment and Hiring Policy | HR |
+| POL-HR-002 | Compensation and Benefits Policy | HR |
+| POL-HR-003 | Time and Attendance Policy | HR |
+| POL-HR-004 | Leave Management Policy | HR |
+| POL-HR-005 | Performance Management Policy | HR |
+| POL-HR-006 | Disciplinary Action and Termination Policy | HR |
+| POL-HR-007 | Workplace Health and Safety Policy | HR |
+| POL-HR-008 | Code of Conduct and Ethics | HR |
+| POL-HR-009 | Anti-Sexual Harassment Policy | HR |
+| POL-HR-010 | Data Privacy Policy | HR |
+| POL-IT-001 | Information Security Policy | IT |
+| POL-IT-002 | POS System Usage Policy | IT |
+| POL-IT-003 | Change Management Policy | IT |
+| POL-IT-004 | Business Continuity and Disaster Recovery | IT |
+| POL-CX-001 | Customer Data Privacy and Protection | CX |
+| POL-CX-002 | Loyalty Program Terms and Conditions | CX |
+
 ---
 
 ## 5.2 Financial Policies (Detail)

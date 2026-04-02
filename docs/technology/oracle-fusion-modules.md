@@ -1,8 +1,10 @@
 # 03 — ORACLE FUSION CLOUD MODULE MAPPING
 
-## Module-to-Business Function Matrix
+## 3.1 Overview
 
 This section maps every Oracle Fusion Cloud module to specific Tahanan Depot business functions, showing how each feature is utilized across the production environment.
+
+| Module numbering follows the functional domain order: Financial Management (3.2), Procurement (3.3), Supply Chain (3.4), HCM (3.5), EPM (3.6), CX (3.7), Risk Management (3.8), and Integration & Analytics (3.9).
 
 ---
 

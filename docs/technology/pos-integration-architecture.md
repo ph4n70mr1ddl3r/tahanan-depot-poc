@@ -9,7 +9,7 @@ The custom POS system, developed in-house by Tahanan Digital, Inc., is deployed 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        CUSTOM POS SYSTEM                        │
-│                    (120 Stores, ~500 Terminals)                  │
+│                    (120 Stores, ~760 Terminals)                 │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────────────┐  │
 │  │ Frontend  │  │ Backend  │  │ Local DB │  │ Offline Cache  │  │
 │  │ (React)   │  │ (Java/   │  │ (Postgres│  │ (Encrypted)    │  │
@@ -162,7 +162,7 @@ The custom POS system, developed in-house by Tahanan Digital, Inc., is deployed 
    - Receipt method: Map POS payment method to Oracle receipt method.
    - Lines: Map POS lines to AR receipt lines with item, quantity, amount.
 4. Trigger Accounting Hub:
-   - Generate subledger journal with full CoA coding (Company-Region-CostCenter-Account-ProductCat-IC).
+   - Generate subledger journal with full CoA coding (Company-Region-CostCenter-Account-ProductCat-IC-Future).
    - Post to GL.
 5. Decrement inventory in Oracle Inventory Management:
    - Organization: Store inventory org matching storeId.

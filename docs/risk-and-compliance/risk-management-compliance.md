@@ -65,7 +65,7 @@ BOARD OF DIRECTORS
 | RSK-STR-001 | Failure to achieve target store count expansion on schedule | 3 | 3 | 9 | Phased rollout with contingencies; robust site selection process | COO | EPM Planning (capital planning, scenario modeling) |
 | RSK-STR-002 | Market share erosion from competitors (Wilcon, Handyman, ACE) | 3 | 4 | 12 | Differentiation via loyalty, service, assortment; competitive monitoring | CMO | CX Analytics, ERP Analytics (market share tracking) |
 | RSK-STR-003 | Economic downturn reducing consumer spending on home improvement | 3 | 4 | 12 | Diversified price points; value assortment; contractor B2B focus during downturns | CEO / CFO | EPM Planning (scenario modeling, rolling forecasts) |
-| RSK-STR-004 | Oracle Fusion or POS integration failure or 2 | 5 | 10 | Experiencing SI partner; phased pilot approach; rollback plans executed during initial deployment | CIO | Implementation History (Doc 10) |
+| RSK-STR-004 | Oracle Fusion or POS integration failure | 2 | 5 | 10 | Experienced SI partner; phased pilot approach; rollback plans | CIO | OIC monitoring; POS offline mode |
 | RSK-STR-005 | Foreign exchange fluctuation impacting imported goods cost | 4 | 3 | 12 | Forward contracts; diversified sourcing (local alternatives); hedging strategy | VP Treasury | Cash Management, Global Trade Management |
 
 ### 11.2.2 Operational Risks
@@ -73,7 +73,7 @@ BOARD OF DIRECTORS
 | Risk ID | Risk Description | Likelihood | Impact | Score | Mitigation Strategy | Owner | Oracle Fusion Touchpoint |
 |---------|-----------------|------------|--------|-------|-------------------|-------|------------------------|
 | RSK-OPS-001 | Supply chain disruption (port congestion, typhoon, supplier failure) | 4 | 4 | 16 | Multi-supplier strategy; safety stock buffers; alternative sourcing routes | VP Supply Chain | SCP (demand/supply planning), WMS, TMS |
-| RSK-OPS-002 | POS system failure causing store-level outage | 2 | 3 | 6 | Offline mode (24-hour capability); L1-L3 support tiers; redundant hardware | VP Digital Products | POS Integration (Doc 08); OIC monitoring — mitigated during initial deployment, proven effective in production |
+| RSK-OPS-002 | POS system failure causing store-level outage | 2 | 3 | 6 | Offline mode (24-hour capability); L1-L3 support tiers; redundant hardware | VP Digital Products | POS Integration (Doc 08); OIC monitoring |
 | RSK-OPS-003 | Warehouse accident causing injury or fatality | 2 | 5 | 10 | Safety training; PPE enforcement; regular inspections; forklift certification | VP Distribution | HCM Workforce Health & Safety |
 | RSK-OPS-004 | Inventory shrinkage exceeding target (theft, damage, administrative error) | 3 | 3 | 9 | Loss prevention program; cycle counting; surveillance; access controls | VP Store Ops | Inventory Management (cycle count, adjustments) |
 | RSK-OPS-005 | Product recall or safety incident | 2 | 4 | 8 | Quality inspection; supplier quality management; recall procedure; insurance | VP Procurement | PLM Quality Management |

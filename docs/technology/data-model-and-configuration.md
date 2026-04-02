@@ -27,13 +27,11 @@ This section documents the Oracle Fusion Cloud production configuration for Taha
 | TP-Primary | Tahanan Property | PHP | TD-CoA | Jan-Dec | Philippine Standard (PFRS) |
 | TD-Primary | Tahanan Digital | PHP | TD-CoA | Jan-Dec | Philippine Standard (PFRS) |
 
-### 9.2.3 Reporting Currency Ledger
-
-| Ledger Name | Source Ledger | Currency | Purpose |
+### 9.1.3 Reporting Currency Ledger| Ledger Name | Source Ledger | Currency | Purpose |
 |-------------|-------------|----------|---------|
 | Consolidated-USD | All primary ledgers | USD | Foreign investor reporting |
 
-### Business Units (Complete List)
+### 9.1.4 Business Units (Complete List)
 
 | Business Unit | Legal Entity | BU Type |
 |---------------|-------------|---------|
@@ -228,7 +226,7 @@ Level 1: Department (12)
 
 ## 9.7 Workflow Configuration Summary
 
-### 9.8.1 Approval Workflows
+### 9.7.1 Approval Workflows
 
 | Workflow | Module | Trigger | Rules |
 |----------|--------|---------|-------|
