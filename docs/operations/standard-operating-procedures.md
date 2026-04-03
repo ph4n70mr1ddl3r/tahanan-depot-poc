@@ -490,3 +490,278 @@
 - Severity 1 (store down): VP IT notified immediately; bridge call within 30 minutes.
 - Post-incident review required for all Severity 1 incidents within 48 hours.
 - Knowledge base updated for every resolved incident.
+
+---
+
+## 6.8 Supplementary Standard Operating Procedures
+
+### 6.8.1 Supplementary SOP Index
+
+| SOP ID | Title | Domain | Process Owner |
+|-----------|-------|--------|---------------|
+| SOP-IT-002 | Oracle Fusion User Provisioning and De-provisioning | IT/Security | VP Enterprise Apps |
+| SOP-IT-003 | Oracle Fusion Quarterly Update Deployment | IT | VP Enterprise Apps |
+| SOP-FIN-005 | Intercompany Transaction Processing | Finance | VP Finance |
+| SOP-FIN-006 | Bank Account Opening and Management | Finance/Treasury | VP Treasury |
+| SOP-SCM-007 | Return to Vendor (RTV) Procedure | Supply Chain | VP Procurement |
+| SOP-SCM-008 | Damage Assessment and Disposal Procedure | Supply Chain | Store Manager |
+| SOP-CX-003 | E-Commerce Order Fulfillment | CX/E-Commerce | VP E-Commerce |
+| SOP-CX-004 | Installation and Field Service Scheduling | CX/After-Sales | VP Customer Experience |
+| SOP-HR-005 | Employee Transfer and Promotion | HR | HR Business Partner |
+| SOP-HR-006 | Performance Improvement Plan Execution | HR | HR Business Partner |
+| SOP-MKT-001 | Marketing Campaign Planning and Execution | Marketing | VP Digital Marketing |
+
+---
+
+### SOP-IT-002: Oracle Fusion User Provisioning and De-provisioning
+
+**Responsible:** IT Security Administrator + HR Coordinator  
+**Systems:** Oracle Fusion Cloud (Security Console, HCM)
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Receive provisioning request | Request submitted via IT Service Desk by Hiring Manager or HR Coordinator; includes employee name, entity, department, position, and required role template |
+| 2 | Verify approval | Confirm new hire onboarding is approved in Oracle HCM Core HR (employee record exists) |
+| 3 | Assign security roles | IT Security maps position to Oracle Fusion security role per Role-to-Security Matrix (Doc 07, Section 7.8) |
+| 4 | Apply SoD check | System automatically checks for Segregation of Duties conflicts; conflicts flagged and routed to VP Finance for review |
+| 5 | Create user account | User account created in Oracle Fusion Security Console; SSO account provisioned |
+| 6 | Configure MFA | Multi-factor authentication enrolled (mobile authenticator app + backup method) |
+| 7 | Assign data access | Data access grants configured per role (cost center, inventory org, BU restrictions) |
+| 8 | Notify user | User receives system access notification via Oracle ME with login instructions |
+| 9 | Verify access | User confirms first login within 48 hours; IT verifies access is appropriate |
+| 10 | Document | Provisioning record logged in IT audit log |
+
+**De-provisioning:**
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Receive separation notification | HR initiates offboarding in Oracle HCM; IT notified via automatic workflow |
+| 2 | Disable access | All Oracle Fusion access disabled within 24 hours of separation effective date |
+| 3 | Reassign tasks | Open workflow tasks reassigned to manager or designated backup |
+| 4 | Export data | Employee's personal data exported per data privacy requirements (if requested) |
+| 5 | Revoke MFA | MFA tokens revoked |
+| 6 | Audit review | Quarterly review of all de-provisioned accounts to verify completeness |
+
+---
+
+### SOP-IT-003: Oracle Fusion Quarterly Update Deployment
+
+**Responsible:** VP Enterprise Apps + Oracle Functional Leads  
+**Systems:** Oracle Fusion Cloud (all modules)
+
+| Step | Timing | Action | Detail |
+|------|--------|--------|--------|
+| 1 | T-30 days | Review update release notes | Oracle publishes quarterly update documentation; functional leads review for impact on configured processes |
+| 2 | T-28 days | Impact assessment | Each functional lead documents: features to adopt, features to defer, potential issues, testing requirements |
+| 3 | T-21 days | Test plan creation | QA team creates test scripts covering all impacted processes; priority given to POS integration flows |
+| 4 | T-14 days | Update applied to test instance | Oracle applies update to non-production (test) environment |
+| 5 | T-14 to T-7 days | User Acceptance Testing (UAT) | Key users from each department test impacted processes in test instance; defects logged |
+| 6 | T-7 days | Go/No-Go decision | VP Enterprise Apps presents test results to CAB; decision to proceed, defer, or request Oracle hotfix |
+| 7 | T-5 days | Communication | All users notified of upcoming update, expected downtime, and any process changes |
+| 8 | T-3 days | Pre-update backup | System configuration and data backup verified |
+| 9 | T-0 (weekend) | Production update | Oracle applies update to production instance; IT monitors for errors |
+| 10 | T+1 day | Post-update verification | Smoke testing of critical processes: POS integration, payroll, financial transactions, inventory |
+| 11 | T+3 days | Issue resolution | Any post-update issues triaged and resolved; Oracle Support engaged if needed |
+| 12 | T+5 days | User notification | Confirmation sent to all users; updated user guides published if process changes |
+| 13 | T+10 days | Post-implementation review | Lessons learned documented; update record filed |
+
+---
+
+### SOP-FIN-005: Intercompany Transaction Processing
+
+**Responsible:** Intercompany Accountant + VP Finance  
+**Systems:** Oracle Fusion Intercompany, Payables, Receivables, GL
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Identify intercompany transaction | Business unit identifies need for goods transfer, services, lease payment, or management fee |
+| 2 | Verify intercompany agreement | Confirm valid ISA or ICSA exists for the transaction type |
+| 3 | Create intercompany invoice | Originating entity creates intercompany invoice in Oracle Intercompany module |
+| 4 | System auto-generates AR/AP | Oracle automatically creates receivable in originating entity and payable in receiving entity |
+| 5 | Approval | Invoice approved per POL-FIN-001 approval matrix |
+| 6 | GL posting | Both sides post to respective entity ledgers with intercompany segment populated |
+| 7 | Monthly reconciliation | Intercompany Accountant reconciles all intercompany AP/AR balances between entities by 10th of month |
+| 8 | Resolve variances | Differences investigated and resolved; journal adjustments if needed |
+| 9 | Net settlement | Treasury calculates net settlement amounts; payments processed via PESONet by 20th |
+| 10 | Consolidation elimination | FCC automatically generates intercompany elimination entries during monthly close |
+
+---
+
+### SOP-FIN-006: Bank Account Opening and Management
+
+**Responsible:** VP Treasury + CFO  
+**Systems:** Oracle Cash Management
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Identify need | Business unit requests new bank account (collection, disbursement, payroll, etc.) |
+| 2 | Justification | Business case submitted: purpose, estimated transaction volume, proposed bank |
+| 3 | Approval | VP Treasury + CFO approval required for all new accounts |
+| 4 | Bank selection | Bank selected per approved banking panel (5 major banks: BDO, BPI, Metrobank, PNB, Landbank) |
+| 5 | Account opening | Treasury Manager submits account opening documents; authorized signatories per corporate secretary certification |
+| 6 | Configuration | Bank account set up in Oracle Cash Management with bank feeds (auto-import) |
+| 7 | Signatory registration | Authorized signatories registered with bank (minimum 2 signatories per account) |
+| 8 | Testing | Test transactions performed to verify Oracle-bank integration |
+| 9 | Go-live | Account activated for business use |
+| 10 | Annual review | All bank accounts reviewed annually: utilization, fees, security, continued need; dormant accounts closed |
+
+---
+
+### SOP-SCM-007: Return to Vendor (RTV) Procedure
+
+**Responsible:** Inventory Control Clerk + Buyer + AP Specialist  
+**Systems:** Oracle Inventory Management, Purchasing, Payables
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Identify RTV need | Defective, damaged, or recalled goods identified that are vendor-responsible (per supplier agreement or warranty) |
+| 2 | Create RTV request | Inventory Control creates RTV in Oracle with item, quantity, reason code, supplier, and supporting documentation (photos, quality report) |
+| 3 | Buyer review | Buyer reviews RTV request; validates against supplier agreement (return window, restocking fee, shipping responsibility) |
+| 4 | Vendor notification | Buyer contacts supplier; obtains Return Merchandise Authorization (RMA) number if required |
+| 5 | Approval | RTV approved per threshold: < PHP 50K Buyer, < PHP 500K VP Procurement, > PHP 500K VP Procurement + VP Finance |
+| 6 | Ship goods | Goods picked, packed, and shipped to vendor; shipping cost charged to vendor per agreement |
+| 7 | Record shipment | RTV shipment recorded in Oracle; inventory decremented; in-transit inventory created |
+| 8 | Vendor credit received | Supplier issues credit note; AP receives and matches to RTV |
+| 9 | Credit applied | Credit note applied to AP; GL journal posted (AP debit, inventory credit) |
+| 10 | Follow-up | If vendor credit not received within 30 days, Buyer escalates; no further orders placed until credit resolved |
+
+---
+
+### SOP-SCM-008: Damage Assessment and Disposal Procedure
+
+**Responsible:** Store/Warehouse Manager + Inventory Control + Finance  
+**Systems:** Oracle Inventory Management
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Identify damaged goods | Damaged goods discovered during receiving, cycle count, or handling; segregated immediately |
+| 2 | Document damage | Photo evidence captured; damage description recorded in Oracle Inventory with reason code |
+| 3 | Assess disposition | Determine: (a) Return to vendor (SOP-SCM-007), (b) Markdown and sell (POL-RET-002), (c) Donate (CSR program), (d) Dispose/Destroy |
+| 4 | Create disposition request | Inventory Control creates adjustment request in Oracle with disposition method and approval routing |
+| 5 | Approval | Disposition approved per threshold: < PHP 5K Store/Warehouse Supervisor, < PHP 50K Regional Director, > PHP 50K VP Supply Chain + VP Finance |
+| 6 | Execute disposition | |
+| | Return to vendor | Per SOP-SCM-007 |
+| | Markdown | Price reduced per POL-RET-002; item moved to markdown subinventory |
+| | Donation | Goods transferred to CSR program; donation receipt obtained |
+| | Disposal | Goods moved to disposal subinventory; licensed waste hauler engaged for pickup |
+| 7 | Record adjustment | Inventory adjustment posted in Oracle; GL journal created (expense/loss account debited, inventory credited) |
+| 8 | Physical destruction | For hazardous materials or branded goods requiring controlled destruction, witness and certificate obtained |
+| 9 | Monthly review | Finance reviews all damage adjustments monthly; trends analyzed by category, location, cause |
+
+---
+
+### SOP-CX-003: E-Commerce Order Fulfillment
+
+**Responsible:** E-Commerce Fulfillment Manager + Warehouse + Store Teams  
+**Systems:** Oracle CX Commerce, Order Management, WMS, TMS, POS
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Order received | Customer places order via Tahanan website or mobile app; order created in Oracle Commerce |
+| 2 | Order captured in OMS | OIC routes order to Oracle Order Management; order number generated |
+| 3 | Fraud screening | Automated fraud check (address verification, velocity check); flagged orders reviewed by fraud analyst |
+| 4 | Inventory reservation | Inventory reserved at fulfillment location (warehouse or nearest store with stock) |
+| 5 | Payment authorization | Payment method authorized (card, e-wallet, GCash/Maya, bank transfer) |
+| 6 | Fulfillment determination | System determines fulfillment method: |
+| | | **Warehouse Ship:** Standard delivery (3-5 days); picked, packed, shipped from warehouse |
+| | | **Click-and-Collect:** Customer picks up at selected store within 24-48 hours |
+| | | **Same-Day Delivery:** Metro Manila orders before 12 PM; delivered same day via partner courier |
+| | | **Store Fulfillment:** Order routed to nearest store for packing and pickup or local delivery |
+| 7 | Pick and pack | Warehouse picker picks items per WMS pick task; packer verifies and packs for shipping |
+| 8 | Shipping label generated | TMS generates shipping label; carrier assigned per routing rules |
+| 9 | Hand off to carrier | Package handed to carrier; tracking number sent to customer via SMS/email |
+| 10 | Delivery tracking | Customer tracks delivery via website/app; TMS updates delivery status |
+| 11 | POD captured | Delivery confirmation captured; order status updated to "Delivered" |
+| 12 | Customer notification | Delivery confirmation sent to customer; satisfaction survey triggered |
+| 13 | Revenue recognition | Revenue recognized upon delivery (per POL-FIN-005); GL journal posted via OIC |
+
+---
+
+### SOP-CX-004: Installation and Field Service Scheduling
+
+**Responsible:** Installation Services Manager + Service Coordinators + Field Technicians  
+**Systems:** Oracle CX Field Service, Order Management, Inventory
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Service request received | Customer requests installation/delivery for appliances, fixtures, or large items (in-store, online, or via contact center) |
+| 2 | Create service order | Service request created in Oracle CX Field Service with customer details, service type, preferred date/time |
+| 3 | Determine service type | |
+| | | **Standard Installation:** Appliances (AC, water heater, range hood); scheduled within 3-5 business days |
+| | | **Complex Installation:** Custom fixtures, bathroom renovation, electrical work; scheduled within 7-10 business days; site survey may be required |
+| | | **Delivery Only:** Large items requiring delivery; scheduled within 1-3 business days |
+| | | **Warranty Service:** Per manufacturer warranty terms; scheduled within 5-7 business days |
+| 4 | Assign field technician | Field Service auto-assigns technician based on: skill match, location, availability, workload |
+| 5 | Confirm with customer | Service Coordinator contacts customer to confirm date/time, requirements, and access instructions |
+| 6 | Prepare materials | Technician picks up required materials and parts from warehouse or store; inventory decremented |
+| 7 | Perform service | Technician performs installation/service per work order specifications; quality checklist completed |
+| 8 | Customer acceptance | Customer signs service completion form; satisfaction rating captured |
+| 9 | Update service order | Service order closed in Oracle Field Service; time and materials recorded |
+| 10 | Invoice/collect | Installation fee invoiced (if applicable); collected via card, e-wallet, or added to customer account |
+| 11 | Follow-up | Quality Inspector randomly inspects 10% of installations within 30 days; warranty callbacks tracked |
+
+---
+
+### SOP-HR-005: Employee Transfer and Promotion
+
+**Responsible:** HR Business Partner + Hiring Manager (receiving) + Department Manager (releasing)  
+**Systems:** Oracle HCM Core HR, Recruiting, Compensation
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Identify opportunity | Internal vacancy posted on Oracle Recruiting (minimum 3-day internal-only period per POL-HR-001) or manager-initiated transfer |
+| 2 | Employee applies or nominated | Employee submits internal application or is nominated by manager |
+| 3 | HRBP review | HRBP reviews candidate qualifications, performance history, tenure requirements (minimum 1 year in current role for transfer; 2 years for promotion) |
+| 4 | Assessment | Candidate assessed via: performance ratings, skills assessment, interview with receiving manager |
+| 5 | Approval | Transfer: Receiving + releasing manager + HRBP approval. Promotion: VP level approval required |
+| 6 | Compensation review | HRBP and Compensation team review salary against new role's pay band; adjustment approved per guidelines |
+| 7 | Oracle HCM update | New assignment created in Core HR with effective date; previous assignment ended |
+| 8 | System access update | IT notified to update system access per new role (SOP-IT-002) |
+| 9 | Benefits continuity | Benefits verified; no lapse in coverage during transfer |
+| 10 | Knowledge transfer | 2-week overlap period with predecessor (for critical roles); handover checklist completed |
+| 11 | Onboarding to new role | New manager conducts orientation to new department; 30-day check-in scheduled |
+| 12 | Probationary period | Promoted employees on 90-day performance review period; PIP if performance below expectations |
+
+---
+
+### SOP-HR-006: Performance Improvement Plan (PIP) Execution
+
+**Responsible:** HR Business Partner + Direct Manager + Employee  
+**Systems:** Oracle HCM Performance Management, Goals
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Trigger identification | PIP triggered by: performance rating of 2 or below, sustained performance below expectations, behavioral issues not resolved by verbal/written warning |
+| 2 | Manager consultation | Manager consults HRBP to determine if PIP is appropriate; HRBP reviews performance history and documentation |
+| 3 | PIP development | Manager (with HRBP) develops PIP document: specific performance gaps, measurable improvement objectives, support/resources to be provided, timeline (typically 60-90 days) |
+| 4 | PIP meeting | Manager meets with employee to present PIP; HRBP present; employee acknowledges receipt and signs |
+| 5 | Regular check-ins | Manager conducts weekly or bi-weekly check-ins during PIP period; progress documented in Oracle Touchpoints |
+| 6 | Mid-PIP review | At midpoint, manager and HRBP assess progress: on-track, needs adjustment, or not improving |
+| 7 | Final assessment | At end of PIP period, manager and HRBP evaluate: objectives met, partially met, or not met |
+| 8 | Outcome | |
+| | | **Objectives met:** PIP closed; return to normal performance management cycle; positive note in file |
+| | | **Partially met:** PIP extended by 30 days with revised objectives |
+| | | **Not met:** Termination recommendation (with DOLE due process per POL-HR-006) |
+| 9 | Documentation | All PIP documentation retained in Oracle HCM Document Records; accessible to HR, manager, and employee |
+
+---
+
+### SOP-MKT-001: Marketing Campaign Planning and Execution
+
+**Responsible:** VP Digital Marketing + Category Marketing + VP Brand & Advertising  
+**Systems:** Oracle CX Marketing Automation, CDP, Commerce
+
+| Step | Action | Detail |
+|------|--------|--------|
+| 1 | Campaign brief | Campaign owner (VP Brand, VP Digital, or Category Marketing) creates campaign brief: objective, target audience, budget, channels, timeline, KPIs |
+| 2 | Budget approval | Campaign budget approved per POL-FIN-001 authority matrix; budget allocated in Oracle |
+| 3 | Creative development | Creative team develops campaign assets: copy, visuals, video, in-store materials per brand guidelines |
+| 4 | Audience targeting | Customer segments defined using CDP data (loyalty tier, purchase history, demographics, behavior) |
+| 5 | Offer/pricing configuration | Promotional pricing configured in Oracle Pricing (per POL-RET-002); discount codes created |
+| 6 | POS and e-commerce sync | Promotions pushed to POS via OIC; e-commerce promotions activated in Oracle Commerce |
+| 7 | Campaign launch | Multi-channel activation: email, SMS, social media ads, in-store signage, website banners, marketplace listings |
+| 8 | Real-time monitoring | Campaign performance monitored daily: impressions, clicks, conversions, revenue, ROI |
+| 9 | Optimization | Mid-campaign adjustments based on performance data: budget reallocation, creative testing, audience refinement |
+| 10 | Campaign wrap-up | Post-campaign analysis: actual vs. target KPIs, revenue attribution, customer acquisition, learnings |
+| 11 | Financial reconciliation | Campaign costs reconciled against budget; vendor invoices processed |
+| 12 | Retrospective | Campaign retrospective documented; learnings shared with marketing team; incorporated into future planning |

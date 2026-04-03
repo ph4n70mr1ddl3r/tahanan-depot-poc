@@ -375,3 +375,175 @@ This section documents all end-to-end business processes, their Oracle Fusion to
 | 4 | Orphan accounts and unused access removed | Advanced Controls | Risk Management |
 | 5 | Certification completed and documented | Advanced Controls | Risk Management |
 | 6 | Audit report generated for internal audit review | Advanced Controls | Risk Management |
+
+---
+
+## 4.3 Supplementary Business Processes
+
+### PROC-MKT-001: Marketing Campaign Lifecycle
+
+**Trigger:** Marketing calendar event or business-driven campaign need.  
+**Frequency:** Multiple campaigns per month.
+
+| Step | Activity | System | Oracle Module |
+|------|----------|--------|---------------|
+| 1 | Campaign brief created with objectives, audience, budget, channels, KPIs | Marketing Planning | Marketing |
+| 2 | Budget approved per authority matrix | Purchasing / Expenses | Payables / Expenses |
+| 3 | Customer segments defined using CDP data (loyalty tier, RFM, behavior) | CDP | Customer Data Platform |
+| 4 | Creative assets developed per brand guidelines | Creative Tools | — |
+| 5 | Promotional pricing configured in Oracle | Pricing | Order Management |
+| 6 | Promotions synced to POS via OIC | OIC | Integration Cloud |
+| 7 | E-commerce promotions activated | Commerce | Commerce |
+| 8 | Campaign launched across channels (email, SMS, social, in-store, web, marketplace) | Marketing Automation | Marketing |
+| 9 | Real-time performance monitoring (impressions, clicks, conversions, revenue) | CX Analytics | Analytics |
+| 10 | Mid-campaign optimization (budget reallocation, creative testing, audience refinement) | Marketing Automation | Marketing |
+| 11 | Campaign concluded; post-campaign analysis | CX Analytics | Analytics |
+| 12 | Campaign costs reconciled; vendor invoices processed | Payables | Payables |
+| 13 | Learnings documented and shared | Knowledge Management | Knowledge Management |
+
+**Key Controls:**
+- All campaign spending within approved budget.
+- Promotional pricing approved by Category Manager.
+- Customer data used only for opted-in communications (per POL-CX-001).
+- Campaign ROI tracked and reported to CMO.
+
+---
+
+### PROC-ECOM-001: E-Commerce Order Fulfillment (Click-to-Door)
+
+**Trigger:** Customer places order on Tahanan website or mobile app.  
+**Frequency:** Real-time (per order).
+
+| Step | Activity | System | Oracle Module |
+|------|----------|--------|---------------|
+| 1 | Customer places order online | Oracle Commerce | Commerce |
+| 2 | Order routed to Order Management via OIC | OIC → OMS | Order Management |
+| 3 | Automated fraud screening (address, velocity, device) | Fraud detection | Commerce |
+| 4 | Payment authorization (card, GCash/Maya, bank transfer) | Payment gateway | Commerce |
+| 5 | Inventory reservation at optimal fulfillment location | Inventory + GOP | Inventory Management |
+| 6 | Fulfillment method determined (warehouse ship, click-and-collect, same-day, store) | Order Management | Order Management |
+| 7 | Pick task generated in WMS (warehouse fulfillment) or POS (store fulfillment) | WMS / POS | Warehouse Management |
+| 8 | Goods picked, packed, and shipping label generated | WMS + TMS | Warehouse Management + TMS |
+| 9 | Package handed to carrier; tracking number captured | TMS | Transportation Mgmt |
+| 10 | Delivery tracking visible to customer | Commerce + TMS | Commerce + TMS |
+| 11 | Proof of delivery captured | TMS | Transportation Mgmt |
+| 12 | Revenue recognized upon delivery | Revenue Management | Revenue Management |
+| 13 | Customer satisfaction survey triggered | CX Service | Service |
+
+**Key Controls:**
+- Fraud screening prevents fraudulent orders.
+- Inventory reserved prevents overselling.
+- Payment authorized before fulfillment begins.
+- Revenue recognized only upon delivery (per POL-FIN-005).
+
+---
+
+### PROC-CX-003: Installation and Field Service
+
+**Trigger:** Customer requests installation or service for purchased items.  
+**Frequency:** Ad hoc.
+
+| Step | Activity | System | Oracle Module |
+|------|----------|--------|---------------|
+| 1 | Service request created (in-store, online, contact center) | CX Service → Field Service | Service + Field Service |
+| 2 | Service type and complexity determined (standard, complex, warranty, delivery-only) | Field Service | Field Service |
+| 3 | Site survey scheduled (complex installations only) | Field Service | Field Service |
+| 4 | Technician assigned based on skill, location, availability | Field Service | Field Service |
+| 5 | Customer confirms date/time and access requirements | Field Service | Field Service |
+| 6 | Technician picks up materials from warehouse/store | Inventory | Inventory Management |
+| 7 | Service performed; quality checklist completed | Field Service (mobile) | Field Service |
+| 8 | Customer signs completion form; satisfaction captured | Field Service (mobile) | Field Service |
+| 9 | Installation fee invoiced (if applicable) | Receivables | Receivables |
+| 10 | Random quality inspection (10% of jobs within 30 days) | Field Service | Field Service |
+| 11 | Warranty claims tracked per manufacturer terms | CX Service | Service |
+
+**Key Controls:**
+- Technician qualification verified against service type.
+- Materials issued from inventory with proper documentation.
+- Customer acceptance captured before service order closure.
+- Quality inspections provide feedback loop.
+
+---
+
+### PROC-FIN-006: Intercompany Settlement
+
+**Trigger:** End of month.  
+**Frequency:** Monthly.
+
+| Step | Activity | System | Oracle Module |
+|------|----------|--------|---------------|
+| 1 | All intercompany invoices issued for the month | Intercompany | Intercompany |
+| 2 | Intercompany AP/AR reconciliation performed | Payables + Receivables | Payables + Receivables |
+| 3 | Discrepancies identified and investigated | GL + Intercompany | General Ledger |
+| 4 | Adjustment entries posted for unresolved differences | GL | General Ledger |
+| 5 | Net settlement amounts calculated per entity pair | Cash Management | Cash Management |
+| 6 | Settlement instructions generated | Cash Management | Cash Management |
+| 7 | Net payments processed via PESONet | Cash Management + Banking | Cash Management |
+| 8 | Settlement confirmed; intercompany balances cleared | Payables + Receivables | Payables + Receivables |
+| 9 | Intercompany elimination entries generated in FCC | FCC | Financial Consolidation & Close |
+| 10 | Transfer pricing documentation updated (annual) | Tax Reporting | Tax Reporting |
+
+**Key Controls:**
+- All intercompany transactions at arm's-length pricing (per POL-FIN-006, POL-FIN-010).
+- Monthly reconciliation ensures no unresolved intercompany balances.
+- Net settlement reduces unnecessary cash movements.
+- Transfer pricing documentation maintained per BIR requirements.
+
+---
+
+### PROC-SCM-005: Return to Vendor (RTV)
+
+**Trigger:** Defective or damaged goods identified as vendor-responsible.  
+**Frequency:** Ad hoc.
+
+| Step | Activity | System | Oracle Module |
+|------|----------|--------|---------------|
+| 1 | Defective/damaged goods identified and segregated | Inventory | Inventory Management |
+| 2 | Quality inspection report generated | PLM Quality | Product Lifecycle Mgmt |
+| 3 | RTV request created with supporting documentation | Inventory | Inventory Management |
+| 4 | Buyer validates against supplier agreement (return policy, warranty, restocking fee) | Purchasing + Sourcing | Purchasing |
+| 5 | Vendor notified; RMA number obtained if required | Supplier Portal | Supplier Portal |
+| 6 | RTV approved per authority threshold | Purchasing | Purchasing |
+| 7 | Goods shipped to vendor; shipping cost charged to vendor | WMS + TMS | Warehouse Mgmt + TMS |
+| 8 | Shipment recorded; inventory decremented | Inventory | Inventory Management |
+| 9 | Vendor credit note received and matched | Payables | Payables |
+| 10 | Credit applied to AP; GL journal posted | Payables + GL | Payables + GL |
+| 11 | Vendor scorecard updated | Supplier Management | Supplier Management |
+
+**Key Controls:**
+- Quality inspection documentation required before RTV approval.
+- RTV within supplier's return window.
+- Vendor credit matched before AP credit memo posted.
+- Recurring quality issues trigger supplier review (POL-SCM-002).
+
+---
+
+### PROC-PROP-002: Store Closure and Relocation
+
+**Trigger:** Strategic decision to close or relocate a store.  
+**Frequency:** As needed (1-3 per year typically).
+
+| Step | Activity | System | Oracle Module |
+|------|----------|--------|---------------|
+| 1 | Business case for closure/relocation prepared (declining performance, lease expiry, strategic realignment) | EPM Planning | Planning |
+| 2 | Approval obtained (COO + CFO for closure; CEO + Board for relocation with capex) | Narrative Reporting | Narrative Reporting |
+| 3 | Lease exit notice served (per lease terms; typically 6-12 months) | Procurement Contracts | Contracts |
+| 4 | Store inventory disposition plan (transfer to nearby stores, markdown sale, RTV) | Inventory + Planning | Inventory Management |
+| 5 | Employee placement plan (transfer to nearby stores, separation if no placement available) | Core HR | Core HR |
+| 6 | Customer communication plan (signage, direct notification for B2B, loyalty members) | CX Marketing | Marketing |
+| 7 | Inventory transfer executed (SOP-SCM-003 store-to-store transfer) | Inventory + WMS | Inventory Mgmt + WMS |
+| 8 | Markdown/clearance sale conducted (if applicable) | POS + Pricing | POS + Pricing |
+| 9 | Equipment and fixtures disposition (transfer, sell, or dispose) | Assets | Assets |
+| 10 | System deactivation: POS terminals, OIC endpoints, inventory org made inactive | POS + OIC + Inventory | All |
+| 11 | Lease termination costs accounted for (penalties, make-good costs) | Payables + GL | Payables + GL |
+| 12 | Final financial settlement with landlord and service providers | Payables | Payables |
+| 13 | Employee separations processed (per SOP-HR-004) | Core HR + Payroll | Core HR + Payroll |
+| 14 | Store closure documented; lessons learned captured | ERP Analytics | Analytics |
+| 15 | If relocation: new store opening process initiated (PROC-PROP-001) | All | All |
+
+**Key Controls:**
+- Business case approved before any action taken.
+- Employee placement prioritized; separation as last resort with full DOLE compliance.
+- Customer communication planned and executed before closure.
+- All assets accounted for and properly disposed or transferred.
+- System deactivation prevents further transactions at closed location.
